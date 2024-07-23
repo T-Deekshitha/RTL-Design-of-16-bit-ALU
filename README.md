@@ -1,5 +1,6 @@
 This project presents the design and implementation of a 16-bit Arithmetic Logic Unit (ALU) in Verilog.
-Verilog is a hardware description language(HDL) used for modeling electronic systems. 
+Verilog is a hardware description language(HDL) used for modeling electronic systems.
+
 The design involves creating individual modules for logical, arithmetic, and multiplication operations and integrating them into a single ALU module.
 Simulation and synthesis demonstrate the functionality and correctness of the ALU design.
 
@@ -8,7 +9,7 @@ BLOCK DIAGRAM:
 ![ALU_schematic](https://github.com/user-attachments/assets/98f1abc7-be93-4a5d-a0cc-89b580f1cb3c)
 
 A and B are 16 bit inputs (operands). OP is the input which represents operator. There are 3 combinational logic units for logical, arithmetic and multiplication operations.
-Demuxes are used to route the input given to these units taking "OP" input as select line. A multiplexer is used to choose correct output from these blocks. In erilog code, mux and demux are written using case statement.
+Demuxes are used to route the input given to these units taking "OP" input as select line. A multiplexer is used to choose correct output from these blocks. In verilog code, mux and demux are written using case statement.
 
 LOGICAL:
 A behavioural code is used to perform logical operations like inverting, AND, OR, XOR, shifting and rotating etc using a case statement.
